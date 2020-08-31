@@ -28,13 +28,11 @@
   })
   
   // Inicio e configuração do servidor 
-  server
+  //server
   // receber os dados do req.body
   .use(express.urlencoded({ extended: true }))
   // configurar arquivos estáticos (css, scripts, imagens)
-  //.use(express.static(__dirname))
   .use(express.static("public"))
-  //.use(express.static("/public" + __dirname))
   // rotas da aplicação
   .get("/", pageLanding)
   .get("/study", pageStudy)

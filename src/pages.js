@@ -1,6 +1,6 @@
-const Database = require('./src/database/db')
+const Database = require('./database/db')
 
-const { subjects, weekdays, getSubject, convertHoursToMinutes } = require('./src/utils/format')
+const { subjects, weekdays, getSubject, convertHoursToMinutes } = require('./utils/format')
  
 function pageLanding(req, res) {
    return res.render("index.html")
@@ -55,7 +55,7 @@ function pageGiveClasses(req, res) {
 }
 
 async function saveClasses(req, res) {
-    const createProffy = require('./src/database/createProffy')
+    const createProffy = require('./database/createProffy')
     
     const proffyValue = {
         name: req.body.name,
