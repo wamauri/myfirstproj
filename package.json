@@ -1,0 +1,17 @@
+{
+    "name": "name",
+    "description": "description",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "nunjucks": "^3.2.2",
+        "sqlite-async": "^1.1.0"
+    },
+    "author": "Amauri Jesus",
+    "license": "ISC"
+}
